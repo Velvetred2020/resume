@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portrait</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			*    {
+				box-sizing:border-box;
+				}
+			body {
+				background-image: url('https://preview.redd.it/lsdcsf8zm4u61.jpg?width=1138&format=pjpg&auto=webp&s=b3ce4a1c906ef65bd7454bffc645d3a65da4ae2e');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 1500px;
+				background-opacity: 0.9;
+				}
+			.main { 
+				text-align:center;
+				font-size:40px;
+				font-family: brush script MT;
+				background-color: rgba(0,0,128,0.6);
+				color: rgba(189,255,243,0.6);
+				margin-left:10px;
+				margin-right:10px;
+				}
+
+			img {
+				border: 10px solid black;
+				border-radius: 10px;
+				padding:5px;
+				}
+
+			img:hover {
+				box-shadow: 0 0 2px 1px rgba(0,140,186,0.5);
+				animation: shake 0.5s;
+				animation-interaction-count: infinite;
+				}
+			@keyframes shake {
+				0% {transform: translate(1px,1px) rotate(0deg);}
+				10% {transform: translate(-1px,-2px) rotate(-1deg);}
+				20% {transform: translate(-3px,0px) rotate(1deg);}
+				30% {transform: translate(3px,2px) rotate(0deg);}
+				40% {transform: translate(1px,-1px) rotate(1deg);}
+				50% {transform: translate(-1px,2px) rotate(-1	deg);}
+				60% {transform: translate(-3px,1px) rotate(0deg);}
+				70% {transform: translate(3px,1px) rotate(-1deg);}
+				80% {transform: translate(-1px,-1px) rotate(1deg);}
+				90% {transform: translate(1px,2px) rotate(0deg);}
+				100% {transform: translate(1px,-2px) rotate(-1deg);}
+					}
+
+			.column {
+				float:left;
+				width:25%;
+				padding:5px;
+				}
+			.content {
+				background-color: rgba(255,255,255,0.5);
+				margin-right:200px;
+				}
+
+			.row:after {
+				content:"";
+				clear:both;
+				display:table;
+				}
+
+			footer {
+				text-align:center;
+				background-color: rgba(0,0,128,0.6);
+				font-size: 35px;
+				font-family: brush script MT;
+				color: rgba(189,255,243,0.6);
+				letter-spacing: 15px;
+				}
+
+			@media (max-width:481px) {
+						.column { 
+							width:100%;
+							height:auto;
+							}
+						}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>Portofolio</h1>
+		</div>
+		<div class="row">
+			<div class="column">
+				<a target="_blank" href="images/figure.jpg">
+				 	<img src="images/figure.jpg" alt="Figure" width="120px" height="150px" style="margin-left:0px">
+				</a>
+				
+			</div>
+			
+			<div class="column">
+				<a target="_blank" href="images/le.bouquet.jpg">
+					<img src="images/le.bouquet.jpg" alt="Le bouquet" widht="150px" height="200px" style="margin-left:100px;margin-top:0px">
+				</a>
+              		</div>
+			
+
+			<div class="column">
+				<a target="_blank" href="images/vasile.jpg">
+					<img src="images/vasile.jpg" alt="Vasile" width="170px" height="200px" style="margin-left:-75px">
+				</a>
+			</div>
+		
+			<div class="column">
+				<a target="_blank" href="images/aries.jpg">
+					<img src="images/aries.jpg" alt="Aries" width="170px" height="200px" style="margin-top:0px;margin-left:100px">
+				</a>
+			</div>
+			<div class="column">
+				<a target="_blank" href="images/wild.soul.jpg">
+					<img src="images/wild.soul.jpg" alt="Wild soul" width="170px" height="200px" style="margin-left:100px;margin-top:200px">
+				</a>
+			</div>
+			<div class="column">
+				<a target="_blank" href="images/rainbowpus.jpg">
+					<img src="images/rainbowpus.jpg" alt="Rainbowpus" width="350px" height="250px" style="margin-left:0px;margin-top:100px">
+				</a>
+			</div>
+			<div class="column">
+				<a target="_blank" href="images/autoportrait.jpg">
+					<img src="images/autoportrait.jpg" alt="Autoportait" width="170px" heigh="200px" style="margin-left:150px;margin-top:300px">
+				</a>
+			</div>
+			<div class="column">
+				<a target="_blank" href="images/portrait.jpg">
+					<img src="images/portrait.jpg" alt="Portrait" width="170px" height="200px" style="margin-right:50px;margin-top:50px" >
+				</a>
+			</div>
+		</div>
+		<footer>
+			<p>El.sA</p>
+		</footer>
+	</body>
+</html>
